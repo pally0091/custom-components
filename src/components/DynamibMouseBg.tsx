@@ -14,8 +14,8 @@ const DynamicMouseBackground: React.FC = () => {
 
         setPosition({ xPos, yPos });
 
-        const circleSize = 100;
-        const gradient = `radial-gradient(circle ${circleSize}px at ${xPos}px ${yPos}px, #4bc6f6, transparent)`;
+        const circleSize = 50;
+        const gradient = `radial-gradient(circle ${circleSize}px at ${xPos}px ${yPos}px, #8EABB7, transparent)`;
 
         dynamicBackgroundRef.current.style.backgroundImage = gradient;
       }
