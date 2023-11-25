@@ -23,15 +23,6 @@ return (
 
 export default App;
 
-**Styling:**
-
-The component uses Tailwind CSS for styling. It is a full-screen fixed element without pointer events.
-
-<div
-  className="dynamic-background w-screen h-screen fixed top-0 left-0 pointer-events-none"
-  ref={dynamicBackgroundRef}
-></div>
-
 ## Functionality
 
 - Dynamically adjusts the background gradient based on mouse movement.
