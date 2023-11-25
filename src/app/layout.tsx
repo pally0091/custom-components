@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import DynamicMouseBackground from "@/components/DynamibMouseBg";
-
+import DynamicMouseBackground from "@/components/DynamicMouseBg";
+import DynamicTextDiv from "@/components/DynamicTextDiv";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className="text-center">
           <DynamicMouseBackground></DynamicMouseBackground>
-          {children}
+          <DynamicTextDiv>{children}</DynamicTextDiv>
         </main>
       </body>
     </html>

@@ -27,7 +27,7 @@ const DynamicMouseBackground: React.FC = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, [dynamicBackgroundRef]);
-  console.log(position);
+  //   console.log(position);
   return (
     <div
       className="dynamic-background w-screen h-screen fixed top-0 left-0 pointer-events-none"
