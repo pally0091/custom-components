@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DynamicMouseBackground Component
 
-## Getting Started
+## Overview
 
-First, run the development server:
+The `DynamicMouseBackground` component is a React functional component that creates a dynamic background effect that follows the mouse cursor. It uses a `radial-gradient` to produce a circular transition effect.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Import the component:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+import React from "react";
+import DynamicMouseBackground from "./DynamicMouseBackground";
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+const App: React.FC = () => {
+return (
+`<div>`
+{/_ Other components _/}
+`<DynamicMouseBackground />`
+{/_ Additional components _/}
+`</div>`
+);
+};
 
-## Learn More
+export default App;
 
-To learn more about Next.js, take a look at the following resources:
+**Styling:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The component uses Tailwind CSS for styling. It is a full-screen fixed element without pointer events.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<div
+  className="dynamic-background w-screen h-screen fixed top-0 left-0 pointer-events-none"
+  ref={dynamicBackgroundRef}
+></div>
 
-## Deploy on Vercel
+## Functionality
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Dynamically adjusts the background gradient based on mouse movement.
+- Utilizes `radial-gradient` for a circular effect transitioning from `#8EABB7` to transparent.
+- Cleans up event listeners on component unmount.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Dependencies
+
+- Uses React hooks (`useRef`, `useState`, `useEffect`) for state management and DOM interactions.
+
+## Note
+
+Ensure Tailwind CSS is configured in your project for styling classes.
+
+Feel free to customize styles or extend functionality as needed.
