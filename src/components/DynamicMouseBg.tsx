@@ -1,3 +1,12 @@
+/**
+ * DynamicMouseBackground component displays a radial gradient background that follows the mouse cursor position.
+ *
+ * Uses the useRef hook to reference the background div element.
+ * Stores mouse position in component state with useState hook.
+ * On mount, attaches mousemove event listener to window to update gradient position.
+ * Handles cleanup by removing listener on unmount.
+ * Renders a fullscreen fixed div with the dynamic background.
+ */
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 

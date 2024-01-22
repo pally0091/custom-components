@@ -1,3 +1,14 @@
+/**
+ * Button component that renders a styled button with hover state.
+ * Accepts various props to control appearance and behavior:
+ * - children: React node content of the button
+ * - label: Button text label
+ * - primary: Applies primary button styling
+ * - secondary: Applies secondary button styling
+ * - full: Sets width to 100%
+ * - className: Additional CSS class names to apply
+ * - onClick: Click handler function
+ */
 "use client";
 import React, { useState, CSSProperties, ReactNode, MouseEvent } from "react";
 

@@ -1,3 +1,7 @@
+/**
+ * DynamicDiv component displays children content and a floating div on mouse hover.
+ * Uses mouse position and hover state to display floating div with message.
+ */
 // DynamicDiv.tsx
 
 "use client";

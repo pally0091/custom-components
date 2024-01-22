@@ -18,6 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* Renders the main content with a dynamic mouse background and text
+        container. * Contains the children elements passed to the component
+        within a DynamicTextDiv.  */}
         <main className="text-center">
           <DynamicMouseBackground></DynamicMouseBackground>
           <DynamicTextDiv>{children}</DynamicTextDiv>
