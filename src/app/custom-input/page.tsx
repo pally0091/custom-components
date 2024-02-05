@@ -1,3 +1,9 @@
+/**
+ * CustomInputPage component that renders a form with email input
+ * and submit button to sign up for a newsletter.
+ * Handles form submission to log email to console.
+ */
+
 "use client";
 import React, { useState } from "react";
 
