@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import DynamicMouseBackground from "@/components/DynamicMouseBg";
 import DynamicTextDiv from "@/components/DynamicTextDiv";
+import RippleEffect from "@/components/RipplEffect";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,8 +23,10 @@ export default function RootLayout({
         container. * Contains the children elements passed to the component
         within a DynamicTextDiv.  */}
         <main className="text-center">
-          <DynamicMouseBackground></DynamicMouseBackground>
-          <DynamicTextDiv>{children}</DynamicTextDiv>
+          {children}
+          <div className="absolute top-0 left-0 w-full h-full">
+            <RippleEffect />
+          </div>
         </main>
       </body>
     </html>

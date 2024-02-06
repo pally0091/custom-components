@@ -5,3 +5,18 @@
 .scrollbar::-webkit-scrollbar {
   display: none;
 }
+/* keyfram for ripple component  */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
