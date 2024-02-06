@@ -36,7 +36,7 @@ const VideoPlayModalPage = () => {
         open={open}
         setOpen={setOpen}
       >
-        <div className="w-full md:w-[700px] lg:w-[1200px] md:h-[400px] lg:h-[800px]">
+        <div className="w-full md:w-[700px] lg:w-[1200px] md:h-[400px] lg:h-[700px]">
           <video
             src="/vid01.mp4"
             width="100%"

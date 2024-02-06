@@ -40,7 +40,7 @@ export default function Modal({
           <div className="absolute top-0 right-0 pr-4 pt-4">
             <button
               type="button"
-              className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 close-button"
+              className="rounded-md bg-white z-50 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 close-button"
               onClick={() => setOpen(false)}
             >
               <span className="sr-only">Close</span>
