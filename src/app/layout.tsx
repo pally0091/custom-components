@@ -22,12 +22,7 @@ export default function RootLayout({
         {/* Renders the main content with a dynamic mouse background and text
         container. * Contains the children elements passed to the component
         within a DynamicTextDiv.  */}
-        <main className="text-center">
-          {children}
-          <div className="absolute top-0 left-0 w-full h-full">
-            <RippleEffect />
-          </div>
-        </main>
+        <main className="text-center">{children}</main>
       </body>
     </html>
   );
