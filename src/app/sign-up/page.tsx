@@ -11,9 +11,10 @@ const SignupPage = () => {
     <div className="relative w-96 h-[600px] bg-black overflow-hidden  m-auto">
       <div className="flex flex-col justify-between w-full h-full">
         <h1 className="text-white">Signup Page</h1>
-
+        {/* signup form */}
+        <div className="text-white">sign up form</div>
         <button
-          className="text-white px-4 py-2 rounded"
+          className="bg-white px-4 py-2 w-full rounded-t-md"
           onClick={toggleLogin}
         >
           Login
@@ -25,14 +26,16 @@ const SignupPage = () => {
           showLogin ? "translate-y-0" : "translate-y-full"
         }`}
       >
-        <div className="bg-white p-4 rounded flex flex-col justify-between w-full h-full">
+        <div className="bg-white  rounded flex flex-col justify-between w-full h-full">
           <button
-            className="bg-white px-4 py-2 rounded"
+            className="bg-black text-white px-4 py-2 w-full rounded-b-md"
             onClick={toggleLogin}
           >
             Sign Up
           </button>
           <h1>Login Page</h1>
+          {/* login form  */}
+          <div>login form</div>
         </div>
       </div>
     </div>
